@@ -8,7 +8,7 @@ import androidx.compose.ui.tooling.preview.Preview
 
 @Preview
 @Composable
-fun TextExample(name:String){
+fun ButtonExample(){
     Button( onClick = { print("Hola") } ) {
         Text("Pulsame")
     }
