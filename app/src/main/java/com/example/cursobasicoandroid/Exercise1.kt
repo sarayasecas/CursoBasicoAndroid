@@ -56,7 +56,7 @@ fun Exercise1(){
             ){
                Text("Ejemplo 3")
             }
-        
+
     }
 
         Box(
