@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Slider
+import androidx.compose.material3.SliderDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -19,6 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.cursobasicoandroid.ui.theme.ButtonColor
 import com.example.cursobasicoandroid.ui.theme.UnselectedCard
 
 @Composable
@@ -41,7 +43,12 @@ fun HeightSelector(height: Float, onHeightChange:(Float) -> Unit) {
             Slider(
                 value = height,
                 onValueChange = {onHeightChange(it)},
-                valueRange = 120f..220f
+                valueRange = 120f..220f,
+                colors = SliderDefaults.colors(
+                    thumbColor = ButtonColor,
+                    activeTrackColor = ButtonColor,
+                    inactiveTrackColor = ButtonColor.copy(alpha = 0.3f)
+                )
             )
         }
     }

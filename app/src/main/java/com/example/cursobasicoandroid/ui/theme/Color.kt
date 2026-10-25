@@ -14,5 +14,9 @@ val GreenBad = Color(0xFF3DFF39)
 
 val RedBad = Color(0xFFFF0000)
 
-val SelectedCard = Color(0xFF2A2B3A)
-val UnselectedCard = Color(0xFF111328)
+val SelectedCard = Color(0xFFE1A4DE)
+val UnselectedCard = Color(0xFF964293)
+
+val AppBackground = Color(0xFFFBF0FA)
+val ButtonColor = Color(0xFFE1A4DE)
+val ButtonTextColor = Color(0xFF4A154B)

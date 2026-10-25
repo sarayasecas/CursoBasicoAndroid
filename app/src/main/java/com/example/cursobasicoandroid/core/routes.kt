@@ -8,3 +8,6 @@ data object Menu: NavKey
 
 @Serializable
 data object IMC: NavKey
+
+@Serializable
+data class IMCResult(val result: Float): NavKey
